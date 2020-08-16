@@ -2,78 +2,86 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 body {
-  background: linear-gradient(to right, #3c3b3f, #605c3c);
-  font-family: Muli;
+    background: #232323;
+    font-family: 'Lato';
 }
-h1 {
+
+h1, h2 {
   color: #ffffff;
   font-size: 2em;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
-  font-family: Ubuntu;
+  font-family: 'Work Sans';
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .search {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 20%;
-  width: 60%;
+  width: 100%;
   text-align: center;
 }
+
+input:focus{
+    outline: none;
+}
+
 .search form input {
-  width: 90%;
+  width: 60%;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
   color: rgba(0, 0, 0, .9);
-  border-style: none;
+  border-style: solid;
+  border-color: #d75534;
+  border-width: 3px;
+  border-radius: 3px;
   text-align: center;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.search form input:focus{
-  color: rgba(0, 0, 0, .9);
+
+img {
+  width: 54px;
 }
-.bookmarks {
-  position: relative;
-  left: -170px;
-  width: 200px;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5);
+
+a {
+  animation: move 5s infinite;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
 .links {
-  width: 30%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
-.links a {
-  display: inline-block;
-  padding-top: 10px;
-  color: #3c3b3f;
-  text-decoration: none;
-  font-size: 1rem;
-  outline: 0;
+
+.goals {
+    text-align: center;
 }
-.links a:hover {
-  color: #605c3c;
+
+.goals ol li {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px 0px;
 }
-#btn {
-  width: 30px;
-  background-color: rgba(255, 255, 255, 0);
-  color: #3c3b3f;
-  float: right;
-  border: 0;
-  font-size: 1rem;
-  margin-top: 250px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-#btn:hover {
-  color: #605c3c;
+
+@keyframes move {
+  0% {
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
 }

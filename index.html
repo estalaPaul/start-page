@@ -5,34 +5,41 @@
     <meta charset="utf-8">
     <title>Start Page</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300|Muli" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans&display=swap" rel="stylesheet">
+
     <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <div class="search">
-        <h1 class="">Look Shit Up</h1>
-        <form class="row center-xs center-sm center-md center-lg" method="get" action="http://www.google.com/search" value="Google Search">
-            <input class="col-md-10 col-sm-12 col-xs-12 col-lg-8" type="text" name="q" placeholder="Search..." autofocus>
-        </form>
-    </div>
-    <div class="bookmarks">
-        <div class="clickBar">
-            <button type="button" id="btn">>></button>
+    <div class="wrapper">
+        <div class="search">
+            <h1 class="">Look Shit Up</h1>
+            <form id="search-form" class="row center-xs center-sm center-md center-lg" method="get" action="http://www.duckduckgo.com/" value="Search">
+                <input id="search-input" class="col-md-10 col-sm-12 col-xs-12 col-lg-8" type="text" name="q" placeholder="Search..." autofocus>
+            </form>
         </div>
         <div class="links">
-            <a href="https://www.udemy.com/">Udemy</a>
-            <a href="https://github.com/">Github</a>
-            <a href="http://www.youtube.com/">Youtube</a>
-            <a href="http://www.anime1.com/">Anime1</a>
-            <a href="http://www.netflix.com/">Netflix</a>
-            <a href="https://www.reddit.com/">Reddit</a>
-            <a href="http://www.imgur.com/">Imgur</a>
-            <a href="https://www.4chan.org/">4chan</a>
-            <a href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=true&continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den_US&utm_medium=button&utm_campaign=web&utm_content=gotodrive&usp=gtd&ltmpl=drive&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Google Drive</a>
+            <a href="https://www.github.com/"><img src="./img/gh.png"></img></a>
+            <a href="https://www.youtube.com/"><img src="./img/yt.png"></img></a>
+            <a href="https://www.reddit.com/"><img src="./img/reddit.png"></img></a>
+            <a href="https://mail.google.com/"><img src="./img/email.png"></img></a>
+        </div>
+        <div class="goals">
+            <h2>Eye on the Goals</h2>
+            <ol>
+                <li>
+                    Keep Coding. Always code. Be it side projects, OS projects or just a fucking shit start page.
+                </li>
+                <li>
+                    Healthy Relationship. Family is everything and now that your starting your own, do it right.
+                </li>
+                <li>
+                    Hobbies. Fitness, cars, and whatever else you feel like doing at the moment. Keep your mind open to new ideas and don't stop doing it.
+                </li>
+                <li>
+                    Self Growth. Read books on self improvement, look for business opportunites, do anything that makes you feel accomplished.
+                </li>
+            </ol>
         </div>
     </div>
 </body>
