@@ -4,13 +4,12 @@ html, body {
 }
 
 body {
-    background: #232323;
+    background: #292c35;
     font-family: 'Lato';
 }
 
 h1, h2 {
-  color: #ffffff;
-  font-size: 2em;
+  color: #ffffff; font-size: 2em;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
   font-family: 'Work Sans';
 }
@@ -39,7 +38,7 @@ input:focus{
   color: rgba(0, 0, 0, .9);
   border-style: solid;
   border-color: #d75534;
-  border-width: 3px;
+  border-width: 2px;
   border-radius: 3px;
   text-align: center;
   margin-bottom: 15px;
@@ -50,10 +49,9 @@ img {
   width: 54px;
 }
 
-a {
-  animation: move 5s infinite;
+.links a {
   animation-name: move;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -66,22 +64,49 @@ a {
   margin-bottom: 30px;
 }
 
-.goals {
-    text-align: center;
+.extra-wrapper {
+    color: #fff;
+    width: 70%;
 }
 
-.goals ol li {
+.extra-wrapper h2 {
+    font-size: 1.4em;
+}
+
+.extra-wrapper .quote {
+    font-size: 1.3em;
+}
+
+.extra-wrapper .author {
+    text-align: right;
+    font-size: 1.1em;
+}
+
+.attrib-wrapper {
+    width: 70%;
     color: #fff;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 10px 0px;
+}
+
+.attrib-wrapper span {
+    font-size:0.9em;
+    font-weight: bold;
+}
+
+.attrib-wrapper img {
+    height: 20px;
+    width: 20px;
+}
+
+.attrib-wrapper a {
+    color: #ccc;
+    margin-left: 4px;
 }
 
 @keyframes move {
   0% {
-    transform: rotate(180deg)
+    transform: scale(1,1)
   }
   100% {
-    transform: rotate(360deg)
+    transform: scale(1.1,1.1)
   }
 }
