@@ -1,6 +1,6 @@
 window.onload = function () {
     const Http = new XMLHttpRequest();
-    Http.open('GET', 'http://quotes.rest/qod.json?category=inspire');
+    Http.open('GET', 'https://quotes.rest/qod.json?category=inspire');
     Http.send();
 
     Http.onreadystatechange = function() {
